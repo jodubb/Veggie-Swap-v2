@@ -1,25 +1,47 @@
 ﻿import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./navbar.module.css";
+import "../../components/style/css.css";
 
 //TODO Web Template Studio: Add a new link in the NavBar for your page here.
 // A skip link is included as an accessibility best practice. For more information visit https://www.w3.org/WAI/WCAG21/Techniques/general/G1.
 export default function NavBar() {
   return (
-    <React.Fragment>
-      <div className={styles.skipLink}>
-        <a href="#mainContent">Skip to Main Content</a>
-      </div>
-      <nav className="navbar navbar-expand-sm navbar-light border-bottom justify-content-between">
-        <Link className="navbar-brand" to="/">
-          VeggieSwapV2
-        </Link>
-        <div className="navbar-nav">
-          <Link className="nav-item nav-link active" to="Grid">
-            Grid
-          </Link>
+    
+      <div class="w3-top">
+        <div class="w3-row w3-large w3-black" style = {styles.navBar}>
+
+            <div class="w3-col s3">
+                <Link to ="#" class="w3-button w3-block" style = {styles.linkStyles}>Home</Link>
+            </div>
+            <div class="w3-col s3">
+                <a href="#offers" class="w3-button w3-block" style = {styles.linkStyles}>Current Offers</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#transactions" class="w3-button w3-block" style = {styles.linkStyles}>Transactions</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#contact" class="w3-button w3-git block" style = {styles.linkStyles}>Make an Offer</a>
+            </div>
         </div>
-      </nav>
-    </React.Fragment>
+    </div>
+    
   );
+}
+
+var styles = {
+  linkStyles: {
+    color: "#fff",
+    fontFamily: '"Lato", sans-serif',
+
+  },
+
+  navBar: {
+    backgroundColor: "black",
+    color: "#fff",
+    display: "flex",
+    justifyContent: "space-between",
+    padding: 20,
+}
+
+
 }

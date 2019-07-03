@@ -7,6 +7,7 @@ export default function GridComponent(props) {
       <img src={image} alt="Default Grey Box" className="mb-3" />
       <h3>{header}</h3>
       <p>{description}</p>
+      <h1>HELLO WORLD</h1>
     </div>
   );
 }

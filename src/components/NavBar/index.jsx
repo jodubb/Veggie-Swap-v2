@@ -17,10 +17,10 @@ export default function NavBar() {
                 <a href="#offers" class="w3-button w3-block" style = {styles.linkStyles}>Current Offers</a>
             </div>
             <div class="w3-col s3">
-                <a href="#transactions" class="w3-button w3-block" style = {styles.linkStyles}>Transactions</a>
+                <a href="#makeoffer" class="w3-button w3-block" style = {styles.linkStyles}>Make an Offer</a>
             </div>
             <div class="w3-col s3">
-                <a href="#contact" class="w3-button w3-git block" style = {styles.linkStyles}>Make an Offer</a>
+                <a href="#login" class="w3-button w3-git block" style = {styles.linkStyles}>Log In or Register</a>
             </div>
         </div>
     </div>
